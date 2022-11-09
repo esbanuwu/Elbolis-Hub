@@ -14,7 +14,7 @@ Tab5 = Library:Tab("Auto Buy Box Toys")
 
 Tab6 = Library:Tab("Auto Buy Stranger Things")
 
-Tab1:Button("Boy F",function()
+Tab1:Button("Buy F",function()
     local args = {
     [1] = "F"
 }
