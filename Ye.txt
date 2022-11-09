@@ -604,9 +604,9 @@ local newList = {
   "2021",
   "2022"
 }
-local dropdown = Tab7:Dropdown("Dropdown","Info", oldList, function()
+local dropdown = Tab7:NewDropdown("Dropdown","Info", oldList, function()
 
 end)
-Tab7:Button("Update Dropdown", "Refreshes Dropdown", function()
+Tab7:NewButton("Update Dropdown", "Refreshes Dropdown", function()
   dropdown:Refresh(newList)
 end)
