@@ -1,0 +1,21 @@
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+
+local Library = DarkraiX:Window("Verify","","",Enum.KeyCode.RightControl);
+
+Tab1 = Library:Tab("Verificatyon")
+
+Tab2 = Library:Tab("Script")
+
+
+Tab1:Button("Get Code",function()
+print(game:GetService("RbxAnalyticsService"):GetClientId())
+end)
+
+Tab1:Button("Copy Code",function()
+setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
+end)
+
+
+Tab2:Button("Execute",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
+end)
