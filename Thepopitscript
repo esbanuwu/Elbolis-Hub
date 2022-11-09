@@ -7,3 +7,17 @@ for i,v in pairs(HWIDTable) do
         loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Popittrading"))()
     end
 end
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/gui-maker/main/GUI%20make"))() 
+
+local Window = Library.CreateLib("The verification", "Sentinel") 
+
+local Tab = Window:NewTab("verify") 
+
+local Section = Tab:NewSection("copy numbers!") 
+
+Section:NewButton("First click this", "idk", function() 
+print(game:GetService("RbxAnalyticsService"):GetClientId())
+
+Section:NewButton("Second click this", "idk", function() 
+setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
