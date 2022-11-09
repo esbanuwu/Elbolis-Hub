@@ -14,6 +14,8 @@ Tab5 = Library:Tab("Auto Buy Box Toys")
 
 Tab6 = Library:Tab("Auto Buy Stranger Things")
 
+Tab7 = Library:Tab("Misc!!")
+
 Tab1:Button("Buy F",function()
     local args = {
     [1] = "F"
@@ -590,3 +592,10 @@ Tab6:Toggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
             end
         end)
         
+Tab7:Button("Anti AFK", "IS Anti AFK", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/KtPrkdBG", true))()
+end)
+ 
+Tab7:Button("Fly", "Fly Script", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/qCmLpZ4b", true))()
+end)
