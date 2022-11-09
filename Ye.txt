@@ -86,7 +86,7 @@ Tab2:Button("Buy Box Sanic",function()
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy BOx House",function()
+Tab2:Button("Buy Box House",function()
     local args = {
     [1] = "Box Toy House"
 }
@@ -165,7 +165,7 @@ Tab3:Button("Buy Ooze",function()
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab4:Toggle("Auto Buy F{Y}"  , "Auto Buy", function(state)
+Tab4:Toggle("Auto Buy F"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -185,7 +185,7 @@ Tab4:Toggle("Auto Buy F{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy E{Y}"  , "Auto Buy", function(state)
+Tab4:Toggle("Auto Buy E"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -205,7 +205,7 @@ Tab4:Toggle("Auto Buy E{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy D{Y}"  , "Auto Buy", function(state)
+Tab4:Toggle("Auto Buy D"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -225,7 +225,7 @@ Tab4:Toggle("Auto Buy D{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy C{Y}"  , "Auto Buy", function(state)
+Tab4:Toggle("Auto Buy C"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -245,7 +245,7 @@ Tab4:Toggle("Auto Buy C{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy B{Y}"  , "Auto Buy", function(state)
+Tab4:Toggle("Auto Buy B"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -265,7 +265,7 @@ Tab4:Toggle("Auto Buy B{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy A{Y}"  , "Auto Buy", function(state)
+Tab4:Toggle("Auto Buy A"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -287,7 +287,7 @@ Tab4:Toggle("Auto Buy A{Y}"  , "Auto Buy", function(state)
         
         
         
-Tab5:Toggle("Auto Buy Box Harambe{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Harambe"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -307,7 +307,7 @@ Tab5:Toggle("Auto Buy Box Harambe{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Lem{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Lem"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -327,7 +327,7 @@ Tab5:Toggle("Auto Buy Box Lem{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Sanic{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Sanic"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -347,7 +347,7 @@ Tab5:Toggle("Auto Buy Box Sanic{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box House{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box House"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -367,7 +367,7 @@ Tab5:Toggle("Auto Buy Box House{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Sandman{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Sandman"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -387,7 +387,7 @@ Tab5:Toggle("Auto Buy Box Sandman{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Noob{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Noob"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -407,7 +407,7 @@ Tab5:Toggle("Auto Buy Box Noob{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Toy{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Toy"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -427,7 +427,7 @@ Tab5:Toggle("Auto Buy Box Toy{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Egg{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Egg"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -447,7 +447,7 @@ Tab5:Toggle("Auto Buy Box Egg{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy BoxAir{Y}"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box Air"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -470,7 +470,7 @@ Tab5:Toggle("Auto Buy BoxAir{Y}"  , "Auto Buy", function(state)
 
 
 
-Tab6:Toggle("Auto Buy Dart{Y}"  , "Auto Buy", function(state)
+Tab6:Toggle("Auto Buy Dart"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -490,7 +490,7 @@ Tab6:Toggle("Auto Buy Dart{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Demogorgan Kwii{Y}"  , "Auto Buy", function(state)
+Tab6:Toggle("Auto Buy Demogorgan Kwii"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -510,7 +510,7 @@ Tab6:Toggle("Auto Buy Demogorgan Kwii{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Demogorgan{Y}"  , "Auto Buy", function(state)
+Tab6:Toggle("Auto Buy Demogorgan"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -530,7 +530,7 @@ Tab6:Toggle("Auto Buy Demogorgan{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Retro Bike{Y}"  , "Auto Buy", function(state)
+Tab6:Toggle("Auto Buy Retro Bike"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -550,7 +550,7 @@ Tab6:Toggle("Auto Buy Retro Bike{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Walky Talky{Y}"  , "Auto Buy", function(state)
+Tab6:Toggle("Auto Buy Walky Talky"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -570,7 +570,7 @@ Tab6:Toggle("Auto Buy Walky Talky{Y}"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Green Ooze{Y}"  , "Auto Buy", function(state)
+Tab6:Toggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
