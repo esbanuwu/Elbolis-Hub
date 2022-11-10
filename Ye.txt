@@ -595,18 +595,3 @@ Tab6:Toggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
 Tab7:Button("Update Ui", "refresh", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Verify.ya"))()
 end)
-
-local oldList = {
-  "2019",
-  "2020"
-}
-local newList = {
-  "2021",
-  "2022"
-}
-local dropdown = Tab7:Dropdown("Dropdown","Info", oldList, function()
-
-end)
-Tab7:Button("Update Dropdown", "Refreshes Dropdown", function()
-  dropdown:Refresh(newList)
-end)
