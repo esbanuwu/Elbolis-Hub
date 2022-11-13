@@ -591,6 +591,47 @@ Tab6:Toggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
                 
             end
         end)
+
+
+Tab6:Toggle("Auto Buy Baby b"  , "Auto Buy", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Baby Yodo Black"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
+Tab6:Toggle("Auto Buy Baby b "  , "Auto Buy", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Baby Yodo Blue"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
         
 Tab7:Button("Update Ui", "refresh", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Verify.ya"))()
