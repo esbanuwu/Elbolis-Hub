@@ -14,7 +14,7 @@ Tab5 = Library:Tab("Auto Buy Box Toys")
 
 Tab6 = Library:Tab("Auto Buy Stranger Things")
 
-Tab7 = Library:Tab("Misc!!")
+Tab7 = Library:Tab("Item Codes")
 
 Tab1:Button("Buy F",function()
     local args = {
@@ -592,15 +592,36 @@ Tab6:Toggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
             end
         end)
 
+Tab7:Button("Buy Tix Tox",function()
+    local args = {
+    [1] = "Tix Tox"
+}
 
-Tab6:Toggle("Auto Buy Baby b"  , "Auto Buy", function(state)
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
+
+Tab7:Button("Buy Inxta",function()
+    local args = {
+    [1] = "Inxta"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
+
+Tab7:Button("Buy Tix Tox",function()
+    local args = {
+    [1] = "XOX Controller"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
+
+
+Tab7:Toggle("Auto Buy Tix Tox"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
         while _G.on == true do
             wait()
                 local args = {
-                [1] = "Baby Yodo Black"
+                [1] = "Tix Tox"
             }
             game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         
@@ -613,14 +634,14 @@ Tab6:Toggle("Auto Buy Baby b"  , "Auto Buy", function(state)
             end
         end)
 
-Tab6:Toggle("Auto Buy Baby b "  , "Auto Buy", function(state)
+Tab7:Toggle("Auto Buy Inxta"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
         while _G.on == true do
             wait()
                 local args = {
-                [1] = "Baby Yodo Blue"
+                [1] = "Inxta"
             }
             game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         
@@ -632,7 +653,23 @@ Tab6:Toggle("Auto Buy Baby b "  , "Auto Buy", function(state)
                 
             end
         end)
+
+Tab7:Toggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
+    if state then
+        _G.on = true
         
-Tab7:Button("Update Ui", "refresh", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Verify.ya"))()
-end)
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "XOX Controller"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
