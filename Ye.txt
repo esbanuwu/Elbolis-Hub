@@ -12,9 +12,11 @@ Tab4 = Library:Tab("Auto Buy Alphabet")
 
 Tab5 = Library:Tab("Auto Buy Box Toys")
 
-Tab6 = Library:Tab("Auto Buy Stranger Things")
+Tab6 = Library:Tab("Auto Buy Stranger ")
 
 Tab7 = Library:Tab("Item Codes")
+
+Tab8 = Library:Tab("Auto buy Item Codes")
 
 Tab1:Button("Buy F",function()
     local args = {
@@ -614,7 +616,7 @@ Tab7:Button("Buy Tix Tox",function()
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
 
-Tab7:Toggle("Auto Buy Tix Tox"  , "Auto Buy", function(state)
+Tab8:Toggle("Auto Buy Tix Tox"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -634,7 +636,7 @@ Tab7:Toggle("Auto Buy Tix Tox"  , "Auto Buy", function(state)
             end
         end)
 
-Tab7:Toggle("Auto Buy Inxta"  , "Auto Buy", function(state)
+Tab8:Toggle("Auto Buy Inxta"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -654,7 +656,7 @@ Tab7:Toggle("Auto Buy Inxta"  , "Auto Buy", function(state)
             end
         end)
 
-Tab7:Toggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
+Tab8:Toggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
