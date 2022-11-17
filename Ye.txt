@@ -20,30 +20,47 @@ Tab7 = Library:Tab("Item Codes")
 
 Tab8 = Library:Tab("Auto buy Item Codes")
 
-Tab9:Toggle("Auto Drop The banana"  , "Auto Drop", function(state)
- if state then
+Tab9 = Library:Tab("Auto Drop")
+
+Tab1:Toggle("Auto Equip"  , "Auto Equip", function(state)
+if state then
         _G.on = true
-        while _G.on do
-            wait(1)
-            
-local args = {
-    [1] = "The banana"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
-
-wait(1)
-
-local args = {
-    [1] = "The banana"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
-end
-    else
+        
+        while _G.on == true do
+            wait(0.5)
+                local A_1 = "The banana"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	Event:FireServer(A_1)
+        
+        wait(0.5)
+        
+            end
+            else
         _G.on = false
-    end
-end)
+                
+            end
+        end)
+
+
+Tab1:Toggle("Auto Drop"  , "Auto Drop", function(state)
+if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait(0.5)
+                local A_1 = "The banana"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
+	Event:FireServer(A_1)
+        
+        wait(0.5)
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
 
 Tab1:Button("Buy F",function()
     local args = {
