@@ -2,6 +2,8 @@ local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gami
 
 local Library = DarkraiX:Window("CreditsToElbolis","","",Enum.KeyCode.RightControl);
 
+Tab9 = Library:Tab("Auto Drop")
+
 Tab1 = Library:Tab("alphabet")
 
 Tab2 = Library:Tab("box toys")
@@ -18,22 +20,37 @@ Tab7 = Library:Tab("Item Codes")
 
 Tab8 = Library:Tab("Auto buy Item Codes")
 
+Tab9:Toggle("Auto Drop The banana"  , "Auto Drop", function(state)
+ if state then
+        _G.on = true
+        while _G.on do
+            wait(1)
+            
+local args = {
+    [1] = "The banana"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(1)
+
+local args = {
+    [1] = "The banana"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
 Tab1:Button("Buy F",function()
     local args = {
     [1] = "F"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
-
-Tab1:Button("Drop The banana",function()
-local A_1 = "The banana"
-	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
-	Event:FireServer(A_1)
-	wait(0.5)
-	local A_1 = "The banana"
-	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
-	Event:FireServer(A_1)
-end)
 
 Tab1:Button("Buy E",function()
     local args = {
