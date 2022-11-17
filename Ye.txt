@@ -20,9 +20,7 @@ Tab7 = Library:Tab("Item Codes")
 
 Tab8 = Library:Tab("Auto buy Item Codes")
 
-Tab9 = Library:Tab("Auto Drop")
-
-Tab1:Toggle("Auto Equip"  , "Auto Equip", function(state)
+Tab9:Toggle("Auto Equip"  , "Auto Equip", function(state)
 if state then
         _G.on = true
         
@@ -42,7 +40,7 @@ if state then
         end)
 
 
-Tab1:Toggle("Auto Drop"  , "Auto Drop", function(state)
+Tab9:Toggle("Auto Drop"  , "Auto Drop", function(state)
 if state then
         _G.on = true
         
