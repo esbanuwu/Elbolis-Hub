@@ -134,7 +134,7 @@ game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(
 
 Tab2:Button("Buy Box  House(Fixed lol)",function()
     local args = {
-    [1] = "Box Toy House"
+    [1] = "Box Toy  House"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
@@ -400,7 +400,7 @@ Tab5:Toggle("Auto Buy Box  House(fixed)"  , "Auto Buy", function(state)
         while _G.on == true do
             wait()
                 local args = {
-                [1] = "Box Toy House"
+                [1] = "Box Toy  House"
             }
             game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         
