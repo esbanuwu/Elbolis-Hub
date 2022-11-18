@@ -132,7 +132,7 @@ Tab2:Button("Buy Box Sanic",function()
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box House(patched)",function()
+Tab2:Button("Buy Box  House(Fixed lol)",function()
     local args = {
     [1] = "Box Toy House"
 }
@@ -393,7 +393,7 @@ Tab5:Toggle("Auto Buy Box Sanic"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box House(patched)"  , "Auto Buy", function(state)
+Tab5:Toggle("Auto Buy Box  House(fixed)"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
