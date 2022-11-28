@@ -2,8 +2,6 @@ local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gami
 
 local Library = DarkraiX:Window("CreditsToElbolis","","",Enum.KeyCode.RightControl);
 
-Tab9 = Library:Tab("Auto Drop")
-
 Tab1 = Library:Tab("alphabet")
 
 Tab2 = Library:Tab("box toys")
@@ -19,6 +17,8 @@ Tab6 = Library:Tab("Auto Buy Stranger ")
 Tab7 = Library:Tab("Item Codes")
 
 Tab8 = Library:Tab("Auto buy Item Codes")
+
+Tab9 = Library:Tab("Auto Drop")
 
 Tab10 = Library:Tab("Misc")
 
@@ -725,62 +725,6 @@ Tab8:Toggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
 Tab10:Button("Infinite Yield", "Executes Infiniteyield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
-Tab10:Button("giant", "makes you giant (r15)", function()
-    -- script made by Elbolis
-
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local Character = LocalPlayer.Character
-local Humanoid = Character:FindFirstChildOfClass("Humanoid")
-
-function rm()
-	for i,v in pairs(Character:GetDescendants()) do
-		if v:IsA("BasePart") then
-			if v.Name == "Handle" or v.Name == "Head" then
-				if Character.Head:FindFirstChild("OriginalSize") then
-					Character.Head.OriginalSize:Destroy()
-				end
-			else
-				for i,cav in pairs(v:GetDescendants()) do
-					if cav:IsA("Attachment") then
-						if cav:FindFirstChild("OriginalPosition") then
-							cav.OriginalPosition:Destroy()  
-						end
-					end
-				end
-				v:FindFirstChild("OriginalSize"):Destroy()
-				if v:FindFirstChild("AvatarPartScaleType") then
-					v:FindFirstChild("AvatarPartScaleType"):Destroy()
-				end
-			end
-		end
-	end
-end
-
-rm()
-wait(0.5)
-Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
-wait(1)
-
-rm()
-wait(0.5)
-Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
-wait(1)
-
-rm()
-wait(0.5)
-Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
-wait(1)
-
-rm()
-wait(0.5)
-Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
-wait(1)
-
-rm()
-wait(0.5)
-Humanoid:FindFirstChild("HeadScale"):Destroy()
-wait(1)
-end)
 Tab10:Button("Trade Value", "Gives you trade value", function()
     game.Players.localPlayer.XRay.Value = true
 end)
@@ -792,3 +736,4 @@ Tab10:Button("rejoin server", "rejoins the server", function()
 end)
 
 Tab11:Button("Made Bye Elbolis", "Credits", function()
+end)
