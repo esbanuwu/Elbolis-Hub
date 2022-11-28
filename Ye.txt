@@ -26,9 +26,9 @@ Tab7 = Library:Tab("Item Codes")
 
 Tab8 = Library:Tab("Auto buy Item Codes")
 
-Tab9 = Library:Tab("Misc")
+Tab10 = Library:Tab("Misc")
 
-Tab10 = Library:Tab("Credits")
+Tab11 = Library:Tab("Credits")
 
 Tab9:Toggle("Auto Equip"  , "Auto Equip", function(state)
 if state then
@@ -728,10 +728,10 @@ Tab8:Toggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
             end
         end)
 
-Tab9:Button("Infinite Yield", "Executes Infiniteyield", function()
+Tab10:Button("Infinite Yield", "Executes Infiniteyield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
-Tab9:Button("giant", "makes you giant (r15)", function()
+Tab10:Button("giant", "makes you giant (r15)", function()
     -- script made by Elbolis
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -787,14 +787,14 @@ wait(0.5)
 Humanoid:FindFirstChild("HeadScale"):Destroy()
 wait(1)
 end)
-Tab9:Button("Trade Value", "Gives you trade value", function()
+Tab10:Button("Trade Value", "Gives you trade value", function()
     game.Players.localPlayer.XRay.Value = true
 end)
-Tab9:Button("fake drop gui", "Executes fake drop gui", function()
+Tab10:Button("fake drop gui", "Executes fake drop gui", function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/domdaobfuscater/09214a11b8a30bab47ceff281116195f/raw/40356a0ff4542a51283ab5de0a642233a6ceb6f9/gistfile1.txt"))()
 end)
-Tab9:Button("rejoin server", "rejoins the server", function()
+Tab10:Button("rejoin server", "rejoins the server", function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
 
-Tab10:Button("Made Bye Elbolis", "Credits", function()
+Tab11:Button("Made Bye Elbolis", "Credits", function()
