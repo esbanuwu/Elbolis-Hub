@@ -1,3 +1,9 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/R1zve/Roblox-Scripts/main/Pop%20It%20Trading%20SetTeleportGui.lua", true))()
+
+if game.GameId ~= 7346416636 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/R1zve/Roblox-Scripts/main/Pop%20It%20Trading%20WrongGame.lua", true))()
+	return
+end
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
 
 local Library = DarkraiX:Window("CreditsToElbolis","","",Enum.KeyCode.RightControl);
