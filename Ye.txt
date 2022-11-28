@@ -737,3 +737,8 @@ end)
 
 Tab11:Button("Made Bye Elbolis", "Credits", function()
 end)
+
+Tab11:Button("Copy discord", function()
+   setclipboard("https://discord.gg/dSJZsJdpmg")
+   UILib:Notification("Notification", "Copied!", "Okay")
+end)
