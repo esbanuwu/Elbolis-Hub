@@ -50,33 +50,33 @@ Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function(
     Library:ToggleUI()
 end)
 
-local Tab2 = Window:NewTab("Buy alphabet")
+local Tab2 = Window:NewTab("Buy robux item")
 
-local Section_xD = Tab2:NewSection("Buy ")
+local Section_xD = Tab2:NewSection("Buy Alphabet")
 
-local Tab3 = Window:NewTab("Buy Box")
+local Tab3 = Window:NewTab("Buy robux item")
 
-local Section_Bro = Tab3:NewSection("Buy")
+local Section_Bro = Tab3:NewSection("Buy Box toy")
 
-local Tab4 = Window:NewTab("Buy Stranger")
+local Tab4 = Window:NewTab("Buy robux item")
 
-local Section_Yeq = Tab4:NewSection("Buy")
+local Section_Yeq = Tab4:NewSection("Buy stranger things")
 
-local Tab5 = Window:NewTab("Auto Buy Alpha")
+local Tab5 = Window:NewTab("Auto Buy robux item")
 
-local Section_do = Tab5:NewSection("Auto Buy")
+local Section_do = Tab5:NewSection("Auto Buy Alphabet")
 
-local Tab6 = Window:NewTab("Auto Buy Box")
+local Tab6 = Window:NewTab("Auto Buy robux item")
 
-local Section_si = Tab6:NewSection("Auto Buy")
+local Section_si = Tab6:NewSection("Auto Buy Box toy")
 
-local Tab7 = Window:NewTab("Auto Buy Stranger")
+local Tab7 = Window:NewTab("Auto Buy robux item")
 
-local Section_no = Tab7:NewSection("Autobuy")
+local Section_no = Tab7:NewSection("Autobuy stranger ")
 
-local Tab8 = Window:NewTab("Auto Buy Code")
+local Tab8 = Window:NewTab("Auto Buy robux item")
 
-local Section_he = Tab8:NewSection("Auto Buy")
+local Section_he = Tab8:NewSection("Auto Buy codes")
 
 local Tab9 = Window:NewTab("Misc")
 
