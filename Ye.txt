@@ -740,7 +740,7 @@ end)
 Section_ojqha:NewButton("rejoin server","ButtonInfo",function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
-Section_ojqha:NewToggle("safe place", "safe", function()
+Section_ojqha:NewButton("safe place", "safe", function()
 Instance.new('Part',workspace)
 Local = game:GetService('Players').LocalPlayer
 Char  = Local.Character
