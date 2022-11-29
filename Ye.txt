@@ -86,42 +86,42 @@ local Tab10 = Window:NewTab("Credits")
 
 local Section_yep = Tab10:NewSection("My Credits")
 
-Section_xD:NewButton("Buy F","ButtonInfo","ButtonInfo",function()
+Section_xD:NewButton("Buy F","ButtonInfo",function()
     local args = {
     [1] = "F"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Section_xD:NewButton("Buy E","ButtonInfo","ButtonInfo",function()
+Section_xD:NewButton("Buy E","ButtonInfo",function()
     local args = {
     [1] = "E"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Section_xD:NewButton("Buy D","ButtonInfo","ButtonInfo",function()
+Section_xD:NewButton("Buy D","ButtonInfo",function()
     local args = {
     [1] = "D"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Section_xD:NewButton("Buy C","ButtonInfo","ButtonInfo",function()
+Section_xD:NewButton("Buy C","ButtonInfo",function()
     local args = {
     [1] = "C"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Section_xD:NewButton("Buy B","ButtonInfo","ButtonInfo",function()
+Section_xD:NewButton("Buy B","ButtonInfo",function()
     local args = {
     [1] = "B"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Section_xD:NewButton("Buy A","ButtonInfo","ButtonInfo",function()
+Section_xD:NewButton("Buy A","ButtonInfo",function()
     local args = {
     [1] = "A"
 }
@@ -130,7 +130,7 @@ game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(
 
 
 
-Section_Bro:NewButton("Buy Box Harambe","ButtonInfo","ButtonInfo",function()
+Section_Bro:NewButton("Buy Box Harambe","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Harambe"
 }
@@ -158,7 +158,7 @@ Section_Bro:NewButton("Buy Box Sanic","ButtonInfo",function()
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Section_Bro:NewButton("Buy Box  House(Fixed lol)","ButtonInfo",function()
+Section_Bro:NewButton("Buy Box House(Fixed lol)","ButtonInfo",function()
     local args = {
     [1] = "Box Toy  House"
 }
