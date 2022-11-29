@@ -740,6 +740,30 @@ end)
 Section_ojqha:NewButton("rejoin server","ButtonInfo",function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
+Section_ojqha:NewToggle("anti reaper make sure you have alot of Watermelon"  , "Equips Watermelon", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                
+	local A_1 = "Watermelon"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	local A_1 = "Watermelon"
+	Visible = false
+
+	Event:FireServer(A_1)
+	
+                                                                
+                                                                
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                                end)
 
 Section_yep:NewButton("Made Bye Elbolis", "Credits", "ButtonInfo",function()
 end)
