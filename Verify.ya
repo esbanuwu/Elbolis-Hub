@@ -6,7 +6,6 @@ Tab1 = Library:Tab("Verificatyon")
 
 Tab2 = Library:Tab("Script")
 
-
 Tab1:Button("Get Code",function()
 print(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
@@ -15,7 +14,10 @@ Tab1:Button("Copy Code",function()
 setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-
 Tab2:Button("Execute",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
+end)
+
+Tab2:Button("only when you keep running the script",function()
+DarkraiX:ToggleUi()
 end)
