@@ -49,7 +49,7 @@ local Section1 = Tab1:NewSection("Close Ui")
 Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
     Library:ToggleUI()
 end)
-Section1:NewKeybind("safe place","justo safe",function()
+Section1:NewButton("safe place","just safe",function()
 Instance.new('Part',workspace)
 Local = game:GetService('Players').LocalPlayer
 Char  = Local.Character
