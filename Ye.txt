@@ -1,105 +1,127 @@
-local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+-- Gui to Lua
+-- Version: 3.2
 
-local Library = DarkraiX:Window("CreditsToElbolis","","",Enum.KeyCode.RightControl);
+-- Instances:
 
-Tab1 = Library:Tab("alphabet")
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 
-Tab2 = Library:Tab("box toys")
+--Properties:
 
-Tab3 = Library:Tab("strange thing")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Tab4 = Library:Tab("Auto Buy Alphabet")
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
+Frame.Size = UDim2.new(0.129513338, 0, 0.227972031, 0)
 
-Tab5 = Library:Tab("Auto Buy Box Toys")
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Close Ui"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 50.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game)
+end)
 
-Tab6 = Library:Tab("Auto Buy Stranger ")
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 50
 
-Tab7 = Library:Tab("Item Codes")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
 
-Tab8 = Library:Tab("Auto buy Item Codes")
+local Window = Library.CreateLib("Pop it Trading Script", "Synapse")
 
-Tab9 = Library:Tab("Auto Drop")
+local Tab1 = Window:NewTab("Close")
 
-Tab10 = Library:Tab("Misc")
+local Section1 = Tab1:NewSection("Close Ui")
 
-Tab11 = Library:Tab("Credits")
+Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
+    Library:ToggleUI()
+end)
 
-Tab9:Toggle("Auto Equip"  , "Auto Equip", function(state)
-if state then
-        _G.on = true
-        
-        while _G.on == true do
-            wait(0.5)
-                local A_1 = "The banana"
-	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
-	Event:FireServer(A_1)
-        
-        wait(0.5)
-        
-            end
-            else
-        _G.on = false
-                
-            end
-        end)
+local Tab2 = Window:NewTab("Buy alphabet")
 
+local Section_xD = Tab2:NewSection("Buy ")
 
-Tab9:Toggle("Auto Drop"  , "Auto Drop", function(state)
-if state then
-        _G.on = true
-        
-        while _G.on == true do
-            wait(0.5)
-                local A_1 = "The banana"
-	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
-	Event:FireServer(A_1)
-        
-        wait(0.5)
-        
-            end
-            else
-        _G.on = false
-                
-            end
-        end)
+local Tab3 = Window:NewTab("Buy Box")
 
+local Section_Bro = Tab3:NewSection("Buy")
 
-Tab1:Button("Buy F",function()
+local Tab4 = Window:NewTab("Buy Stranger")
+
+local Section_Yeq = Tab4:NewSection("Buy")
+
+local Tab5 = Window:NewTab("Auto Buy Alpha")
+
+local Section_do = Tab5:NewSection("Auto Buy")
+
+local Tab6 = Window:NewTab("Auto Buy Box")
+
+local Section_si = Tab6:NewSection("Auto Buy")
+
+local Tab7 = Window:NewTab("Auto Buy Stranger")
+
+local Section_no = Tab7:NewSection("Autobuy")
+
+local Tab8 = Window:NewTab("Auto Buy Code")
+
+local Section_he = Tab8:NewSection("Auto Buy")
+
+local Tab9 = Window:NewTab("Misc")
+
+local Section_ojqha = Tab9:NewSection("Thing")
+
+local Tab10 = Window:NewTab("Credits")
+
+local Section_yep = Tab10:NewSection("My Credits")
+
+Section_xD:NewButton("Buy F","ButtonInfo","ButtonInfo",function()
     local args = {
     [1] = "F"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab1:Button("Buy E",function()
+Section_xD:NewButton("Buy E","ButtonInfo","ButtonInfo",function()
     local args = {
     [1] = "E"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab1:Button("Buy D",function()
+Section_xD:NewButton("Buy D","ButtonInfo","ButtonInfo",function()
     local args = {
     [1] = "D"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab1:Button("Buy C",function()
+Section_xD:NewButton("Buy C","ButtonInfo","ButtonInfo",function()
     local args = {
     [1] = "C"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab1:Button("Buy B",function()
+Section_xD:NewButton("Buy B","ButtonInfo","ButtonInfo",function()
     local args = {
     [1] = "B"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab1:Button("Buy A",function()
+Section_xD:NewButton("Buy A","ButtonInfo","ButtonInfo",function()
     local args = {
     [1] = "A"
 }
@@ -108,63 +130,63 @@ game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(
 
 
 
-Tab2:Button("Buy Box Harambe",function()
+Section_Bro:NewButton("Buy Box Harambe","ButtonInfo","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Harambe"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box Lem",function()
+Section_Bro:NewButton("Buy Box Lem","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Lem"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box SandMan",function()
+Section_Bro:NewButton("Buy Box SandMan","ButtonInfo",function()
     local args = {
     [1] = "Box Toy SandMan"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box Sanic",function()
+Section_Bro:NewButton("Buy Box Sanic","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Sanic"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box  House(Fixed lol)",function()
+Section_Bro:NewButton("Buy Box  House(Fixed lol)","ButtonInfo",function()
     local args = {
     [1] = "Box Toy  House"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box Noob",function()
+Section_Bro:NewButton("Buy Box Noob","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Noob"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box Box",function()
+Section_Bro:NewButton("Buy Box Box","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Box Toy"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box Egg",function()
+Section_Bro:NewButton("Buy Box Egg","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Egg"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab2:Button("Buy Box Air",function()
+Section_Bro:NewButton("Buy Box Air","ButtonInfo",function()
     local args = {
     [1] = "Box Toy Air"
 }
@@ -173,49 +195,49 @@ game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(
 
 
 
-Tab3:Button("Buy Dart",function()
+Section_Yeq:NewButton("Buy Dart","ButtonInfo",function()
     local args = {
     [1] = "Dart"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab3:Button("Buy Demogorgan Kwii",function()
+Section_Yeq:NewButton("Buy Demogorgan Kwii","ButtonInfo",function()
     local args = {
     [1] = "Demogorgan Kawaii"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab3:Button("Buy Demogorgan",function()
+Section_Yeq:NewButton("Buy Demogorgan","ButtonInfo",function()
     local args = {
     [1] = "Demogorgan"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab3:Button("Buy Retro Bike",function()
+Section_Yeq:NewButton("Buy Retro Bike","ButtonInfo",function()
     local args = {
     [1] = "Retro Bike"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab3:Button("Buy Walky",function()
+Section_Yeq:NewButton("Buy Walky","ButtonInfo",function()
     local args = {
     [1] = "Walky Talky"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab3:Button("Buy Ooze",function()
+Section_Yeq:NewButton("Buy Ooze","ButtonInfo",function()
     local args = {
     [1] = "Green Ooze"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
 
-Tab4:Toggle("Auto Buy F"  , "Auto Buy", function(state)
+Section_do:NewToggle("Auto Buy F"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -235,7 +257,7 @@ Tab4:Toggle("Auto Buy F"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy E"  , "Auto Buy", function(state)
+Section_do:NewToggle("Auto Buy E"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -255,7 +277,7 @@ Tab4:Toggle("Auto Buy E"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy D"  , "Auto Buy", function(state)
+Section_do:NewToggle("Auto Buy D"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -275,7 +297,7 @@ Tab4:Toggle("Auto Buy D"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy C"  , "Auto Buy", function(state)
+Section_do:NewToggle("Auto Buy C"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -295,7 +317,7 @@ Tab4:Toggle("Auto Buy C"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy B"  , "Auto Buy", function(state)
+Section_do:NewToggle("Auto Buy B"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -315,7 +337,7 @@ Tab4:Toggle("Auto Buy B"  , "Auto Buy", function(state)
             end
         end)
         
-Tab4:Toggle("Auto Buy A"  , "Auto Buy", function(state)
+Section_do:NewToggle("Auto Buy A"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -337,7 +359,7 @@ Tab4:Toggle("Auto Buy A"  , "Auto Buy", function(state)
         
         
         
-Tab5:Toggle("Auto Buy Box Harambe"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Harambe"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -357,7 +379,7 @@ Tab5:Toggle("Auto Buy Box Harambe"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Lem"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Lem"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -377,7 +399,7 @@ Tab5:Toggle("Auto Buy Box Lem"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Sanic"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Sanic"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -397,7 +419,7 @@ Tab5:Toggle("Auto Buy Box Sanic"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box  House(fixed)"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box  House(fixed)"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -417,7 +439,7 @@ Tab5:Toggle("Auto Buy Box  House(fixed)"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Sandman"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Sandman"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -437,7 +459,7 @@ Tab5:Toggle("Auto Buy Box Sandman"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Noob"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Noob"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -457,7 +479,7 @@ Tab5:Toggle("Auto Buy Box Noob"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Toy"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Toy"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -477,7 +499,7 @@ Tab5:Toggle("Auto Buy Box Toy"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Egg"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Egg"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -497,7 +519,7 @@ Tab5:Toggle("Auto Buy Box Egg"  , "Auto Buy", function(state)
             end
         end)
         
-Tab5:Toggle("Auto Buy Box Air"  , "Auto Buy", function(state)
+Section_si:NewToggle("Auto Buy Box Air"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -520,7 +542,7 @@ Tab5:Toggle("Auto Buy Box Air"  , "Auto Buy", function(state)
 
 
 
-Tab6:Toggle("Auto Buy Dart"  , "Auto Buy", function(state)
+Section_no:NewToggle("Auto Buy Dart"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -540,7 +562,7 @@ Tab6:Toggle("Auto Buy Dart"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Demogorgan Kwii"  , "Auto Buy", function(state)
+Section_no:NewToggle("Auto Buy Demogorgan Kwii"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -560,7 +582,7 @@ Tab6:Toggle("Auto Buy Demogorgan Kwii"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Demogorgan"  , "Auto Buy", function(state)
+Section_no:NewToggle("Auto Buy Demogorgan"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -580,7 +602,7 @@ Tab6:Toggle("Auto Buy Demogorgan"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Retro Bike"  , "Auto Buy", function(state)
+Section_no:NewToggle("Auto Buy Retro Bike"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -600,7 +622,7 @@ Tab6:Toggle("Auto Buy Retro Bike"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Walky Talky"  , "Auto Buy", function(state)
+Section_no:NewToggle("Auto Buy Walky Talky"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -620,7 +642,7 @@ Tab6:Toggle("Auto Buy Walky Talky"  , "Auto Buy", function(state)
             end
         end)
         
-Tab6:Toggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
+Section_no:NewToggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -640,29 +662,7 @@ Tab6:Toggle("Auto Buy Green Ooze"  , "Auto Buy", function(state)
             end
         end)
 
-Tab7:Button("Buy Tix Tox",function()
-    local args = {
-    [1] = "Tix Tox"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
-
-Tab7:Button("Buy Inxta",function()
-    local args = {
-    [1] = "Inxta"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
-
-Tab7:Button("Buy XOX Controller",function()
-    local args = {
-    [1] = "XOX Controller"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
-
-
-Tab8:Toggle("Auto Buy Tix Tox"  , "Auto Buy", function(state)
+Section_he:NewToggle("Auto Buy Tix Tox"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -682,7 +682,7 @@ Tab8:Toggle("Auto Buy Tix Tox"  , "Auto Buy", function(state)
             end
         end)
 
-Tab8:Toggle("Auto Buy Inxta"  , "Auto Buy", function(state)
+Section_he:NewToggle("Auto Buy Inxta"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -702,7 +702,7 @@ Tab8:Toggle("Auto Buy Inxta"  , "Auto Buy", function(state)
             end
         end)
 
-Tab8:Toggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
+Section_he:NewToggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
@@ -722,23 +722,32 @@ Tab8:Toggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
             end
         end)
 
-Tab10:Button("Infinite Yield", "Executes Infiniteyield", function()
+Section_ojqha:NewButton("Infinite Yield","ButtonInfo",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
-Tab10:Button("Trade Value", "Gives you trade value", function()
+Section_ojqha:NewButton("Trade Value","ButtonInfo",function()
     game.Players.localPlayer.XRay.Value = true
 end)
-Tab10:Button("fake drop gui", "Executes fake drop gui", function()
+Section_ojqha:NewButton("Anti-afk","ButtonInfo",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Btt5A3CC"))()
+end)
+Section_ojqha:NewButton("Fly v2","ButtonInfo",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/h5QDPy6s"))()
+end)
+Section_ojqha:NewButton("fake drop gui","ButtonInfo",function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/domdaobfuscater/09214a11b8a30bab47ceff281116195f/raw/40356a0ff4542a51283ab5de0a642233a6ceb6f9/gistfile1.txt"))()
 end)
-Tab10:Button("rejoin server", "rejoins the server", function()
+Section_ojqha:NewButton("rejoin server","ButtonInfo",function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
 
-Tab11:Button("Made Bye Elbolis", "Credits", function()
+Section_yep:NewButton("Made Bye Elbolis", "Credits", "ButtonInfo",function()
 end)
 
-Tab11:Button("Copy discord", function()
+Section_yep:NewButton("Copy discord", "ButtonInfo",function()
    setclipboard("https://discord.gg/dSJZsJdpmg")
-   UILib:Notification("Notification", "Copied!", "Okay")
+end)
+
+Section_yep:NewButton("Copy Youtube", "ButtonInfo",function()
+   setclipboard("https://m.youtube.com/@popittradingduping886/videos")
 end)
