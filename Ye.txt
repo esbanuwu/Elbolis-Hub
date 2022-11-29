@@ -779,16 +779,3 @@ end)
 Section_yep:NewButton("Copy Youtube", "ButtonInfo",function()
    setclipboard("https://m.youtube.com/@popittradingduping886/videos")
 end)
-
-Section_yep:NewDropdown("Update Log!!", "Update", {"
---see trade value
---fly script
---fake drop ui
---anti-afk
---inf yield
---rejoin server
---Fixed Buy alphabet 
---Fixed Buy house 
---added Close Ui", "Option 2", "Option 3"}, function(currentOption)
-    print(currentOption)
-end)
