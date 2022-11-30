@@ -2,13 +2,13 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yello
 
 local Window = Library.CreateLib("Script verification v2.0", "Synapse")
 
-local Tab1 = Window:NewTab("Verification")
+local MainTab1 = Window:NewTab("verification")
 
-local Section1 = Tab1:NewSection("Get Code")
+local Section1 = MainTab1:NewSection("Exclusives")
 
-local Tab2 = Window:NewTab("Script")
+local MainTab2 = Window:NewTab("Script")
 
-local Section2 = Tab2:NewSection("Execute the script")
+local Section2 = MainTab2:NewSection("Execute the script")
 
 Section1:NewButton("Get the code","code",function()
 print(game:GetService("RbxAnalyticsService"):GetClientId())
