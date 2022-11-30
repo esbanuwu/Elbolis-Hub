@@ -4,20 +4,20 @@ local Window = Library.CreateLib("Script verification v2.0", "Synapse")
 
 local MainTab1 = Window:NewTab("verification")
 
-local Section1 = MainTab1:NewSection("Exclusives")
-
 local MainTab2 = Window:NewTab("Script")
 
-local Section2 = MainTab2:NewSection("Execute the script")
+local Cop_Section = MainTab1:NewSection("Copy code")
 
-Section1:NewButton("Get the code","code",function()
+local Exe_Section = MainTab2:NewSection("Execute the script")
+
+Cop_Section:NewButton("Get the code","code",function()
 print(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-Section1:NewButton("Copy Code","Copy",function()
+Cop_Section:NewButton("Copy Code","Copy",function()
 setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-Section2:NewButton("Execute","the script",function()
+Exe_Section:NewButton("Execute","the script",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
 end)
