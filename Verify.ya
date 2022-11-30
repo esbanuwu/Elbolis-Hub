@@ -8,16 +8,16 @@ local Section1 = Tab:NewSection("Get Code")
 
 local Tab2 = Window:NewTab("Script")
 
-local Section2 = Tab2:NewSection("Execute the script)
+local Section2 = Tab2:NewSection("Execute the script")
 
-Section1:NewButton("Get Code",function()
+Section1:NewButton("Get Code","idk",function()
 print(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-Section1:NewButton("Copy Code",function()
+Section1:NewButton("Copy Code","Copy",function()
 setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-Section2:NewButton("Execute",function()
+Section2:NewButton("Execute","execute",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
 end)
