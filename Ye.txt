@@ -722,14 +722,14 @@ Section_he:NewToggle("Auto Buy XOX Controller"  , "Auto Buy", function(state)
             end
         end)
 
-Section_he:NewToggle("Auto Buy tweet"  , "Auto Buy", function(state)
+Section_he:NewToggle("Auto Buy Tweet"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
         while _G.on == true do
             wait()
                 local args = {
-                [1] = "tweet"
+                [1] = "Tweet"
             }
             game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         
