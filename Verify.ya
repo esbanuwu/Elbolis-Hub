@@ -1,6 +1,6 @@
-local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
 
-local Library = DarkraiX:Window("Verify","","",Enum.KeyCode.RightControl);
+local Window = Library.CreateLib("Script verification v2.0", "Synapse")
 
 local Tab1 = Window:NewTab("Verification")
 
