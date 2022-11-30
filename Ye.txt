@@ -810,14 +810,6 @@ box.Position = Vector3.new(198273,916455,133113)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(198273,916470,133113)
 end)
 
-Section_ojqha:NewButton("Delete item", "delete F", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/nxA7A7W4))()
-end)
-
-Section_ojqha:NewButton("Keyboard ", "For delete F", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-end)
-
 Section_yep:NewButton("Made Bye Elbolis", "Credits", "ButtonInfo",function()
 end)
 
