@@ -742,6 +742,27 @@ Section_he:NewToggle("Auto Buy Tweet"  , "Auto Buy", function(state)
             end
         end)
 
+Section_he:NewToggle("Auto Buy magnifying Glass"  , "Auto Buy", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "magnifying Glass"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
+
 Section_ojqha:NewButton("Infinite Yield","ButtonInfo",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
