@@ -749,7 +749,7 @@ Section_he:NewToggle("Auto Buy magnifying Glass"  , "Auto Buy", function(state)
         while _G.on == true do
             wait()
                 local args = {
-                [1] = "magnifying Glass"
+                [1] = "Silver"
             }
             game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         
