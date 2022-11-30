@@ -2,22 +2,22 @@ local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gami
 
 local Library = DarkraiX:Window("Verify","","",Enum.KeyCode.RightControl);
 
-Tab1 = Library:Tab("Verificatyon")
+local Tab1 = Window:NewTab("Verification")
 
-Tab2 = Library:Tab("Script")
+local Section1 = Tab:NewSection("Get Code")
 
-Tab1:Button("Get Code",function()
+local Tab2 = Window:NewTab("Script")
+
+local Section2 = Tab2:NewSection("Execute the script)
+
+Section1:NewButton("Get Code",function()
 print(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-Tab1:Button("Copy Code",function()
+Section1:NewButton("Copy Code",function()
 setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-Tab2:Button("Execute",function()
+Section2:NewButton("Execute",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
-end)
-
-Tab2:Button("only when you keep running the script",function()
-DarkraiX:ToggleUi()
 end)
