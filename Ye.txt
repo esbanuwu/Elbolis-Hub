@@ -742,7 +742,7 @@ Section_he:NewToggle("Auto Buy Tweet"  , "Auto Buy", function(state)
             end
         end)
 
-Section_he:NewToggle("Auto Buy magnifying Glass"  , "Auto Buy", function(state)
+Section_he:NewToggle("Auto Buy Silver"  , "Auto Buy", function(state)
     if state then
         _G.on = true
         
