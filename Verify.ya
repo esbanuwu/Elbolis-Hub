@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/gui-maker/main/GUI%20make"))()
 
-local Window = Library.CreateLib("Script verification v2.0", "Synapse")
+local Window = Library.CreateLib("Script verification v2.0", "Midnight")
 
 local MainTab1 = Window:NewTab("verification")
 
