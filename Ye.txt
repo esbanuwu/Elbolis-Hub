@@ -811,11 +811,11 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(198273,9
 end)
 
 Section_ojqha:NewButton("Delete item", "delete F", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/nxA7A7W4))()
+    loadstring(game:HttpGet('https://pastebin.com/raw/nxA7A7W4))()
 end)
 
 Section_ojqha:NewButton("Keyboard ", "For delete F", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
 Section_yep:NewButton("Made Bye Elbolis", "Credits", "ButtonInfo",function()
