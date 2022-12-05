@@ -1849,12 +1849,12 @@ _G.SectionOn = Color3.fromRGB(0, 250, 0)
 -- Window --
 local Win = Blacklib:Window("Made by Elbolis")
 -- Tab --
-local Main = Win:Tab("• Main", img)
-local Home = Win:Tab("• Home", img)
-local Game = Win:Tab("• Game", img)
-local Play = Win:Tab("• Play", img)
-local Karo = Win:Tab("• Karo", img)
-local Caro = Win:Tab("• Caro", img)
+local Main = Win:Tab("• Buy alphabet", img)
+local Home = Win:Tab("• Buy box toy", img)
+local Game = Win:Tab("• Buy Stranger ", img)
+local Play = Win:Tab("• Auto Buy Alphabet", img)
+local Karo = Win:Tab("• Auto Buy box toy", img)
+local Caro = Win:Tab("• auto Buy Stranger", img)
 
 -- function Main --
 
