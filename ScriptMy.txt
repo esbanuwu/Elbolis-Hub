@@ -1856,6 +1856,7 @@ local Play = Win:Tab("• Auto Alphabet", img)
 local Karo = Win:Tab("• Auto box toy", img)
 local Caro = Win:Tab("• auto Stranger", img)
 local Code = Win:Tab("• auto Code Items", img)
+local Drop = Win:Tab("• auto Drop Items", img)
 
 
 -- function Main --
@@ -2569,3 +2570,210 @@ Code:Toggle("Auto Buy Silver",function(state)
                 
             end
         end)
+
+-- function Drop --
+
+Drop:Line()
+
+Drop:Label("Label")
+
+Drop:Toggle("Drop F", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "F"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "F"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
+Drop:Toggle("Drop Box Toy harambe", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "Box Toy Harambe"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "Box Toy Harambe"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
+Drop:Toggle("Drop Dart", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "Dart"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "Dart"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
+Drop:Toggle("Drop Baby Yodo", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "Baby Yodo"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "Baby Yodo"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
+Drop:Toggle("Drop Friend Blue", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "Friend Blue"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "Friend Blue"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
+Drop:Toggle("Drop Gaming Chair", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "Gaming Chair"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "Gaming Chair"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
+
+Drop:Toggle("Drop Piano", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "Piano"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "Piano"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
+Drop:Toggle("Drop The Banana", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "The Banana"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "The Banana"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
