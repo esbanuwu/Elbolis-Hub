@@ -1852,9 +1852,9 @@ local Win = Blacklib:Window("Made by Elbolis")
 local Main = Win:Tab("• Buy alphabet", img)
 local Home = Win:Tab("• Buy box toy", img)
 local Game = Win:Tab("• Buy Stranger ", img)
-local Play = Win:Tab("• Auto Buy Alphabet", img)
-local Karo = Win:Tab("• Auto Buy box toy", img)
-local Caro = Win:Tab("• auto Buy Stranger", img)
+local Play = Win:Tab("• Auto Alphabet", img)
+local Karo = Win:Tab("• Auto box toy", img)
+local Caro = Win:Tab("• auto Stranger", img)
 
 -- function Main --
 
@@ -2461,3 +2461,5 @@ Caro:Toggle("Auto Buy Green Ooze",function(state)
                 
             end
         end)
+
+--function codes--
