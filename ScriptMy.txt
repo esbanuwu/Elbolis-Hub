@@ -2145,4 +2145,304 @@ if state then
 
 -- function Karo --
 
+Karo:("Auto Buy Box Harambe", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy Harambe"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box Lem", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy Lem"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box Sanic", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy Sanic"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box  House(fixed)", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy  House"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box Sandman", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy SandMan"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box Noob", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy Noob"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box Toy", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy Box Toy"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box Egg", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy Egg"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Karo:("Auto Buy Box Air", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Box Toy Air"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
 -- function Caro --
+
+Caro:("Auto Buy Dart", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Dart"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Caro:("Auto Buy Demogorgan Kwii", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Demogorgan Kawaii"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Caro:("Auto Buy Demogorgan", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Demogorgan"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Caro:("Auto Buy Retro Bike", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Retro Bike"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Caro:("Auto Buy Walky Talky", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Walky Talky"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+Caro:("Auto Buy Green Ooze", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Green Ooze"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
