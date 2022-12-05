@@ -2465,3 +2465,106 @@ Caro:Toggle("Auto Buy Green Ooze",function(state)
         end)
 
 --function code--
+Code:Line()
+
+Code:Label("Label")
+
+Code:Toggle("Auto Buy Tix Tox" function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Tix Tox"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
+Code:Toggle("Auto Buy Inxta" function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Inxta"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
+Code:Toggle("Auto Buy XOX Controller" function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "XOX Controller"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
+Code:Toggle("Auto Buy Tweet" function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Tweet"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+
+Code:Toggle("Auto Buy magnifying Glass" function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+                local args = {
+                [1] = "Silver"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait()
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
