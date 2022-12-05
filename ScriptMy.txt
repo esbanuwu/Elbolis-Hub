@@ -2023,6 +2023,9 @@ game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(
 
 -- function Play --
 
+Play:Line()
+Play:Label("Label")
+
 Play:Toggle("Auto Buy F",  function(state)
     if state then
         _G.on = true
@@ -2144,6 +2147,8 @@ if state then
         end)
 
 -- function Karo --
+Karo:Line()
+Karo:Label("Label")
 
 Karo:("Auto Buy Box Harambe", function(state)
     if state then
@@ -2326,6 +2331,10 @@ Karo:("Auto Buy Box Air", function(state)
         end)
 
 -- function Caro --
+
+Caro:Line()
+Caro:Label("Label")
+
 
 Caro:("Auto Buy Dart", function(state)
     if state then
