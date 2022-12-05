@@ -2155,7 +2155,7 @@ Karo:Line()
 
 Karo:Label("Label")
 
-Karo:("Auto Buy Box Harambe",function(state)
+Karo:Toggle("Auto Buy Box Harambe",function(state)
     if state then
         _G.on = true
         
@@ -2175,7 +2175,7 @@ Karo:("Auto Buy Box Harambe",function(state)
             end
         end)
         
-Karo:("Auto Buy Box Lem",function(state)
+Karo:Toggle("Auto Buy Box Lem",function(state)
     if state then
         _G.on = true
         
@@ -2195,7 +2195,7 @@ Karo:("Auto Buy Box Lem",function(state)
             end
         end)
         
-Karo:("Auto Buy Box Sanic",function(state)
+Karo:Toggle("Auto Buy Box Sanic",function(state)
     if state then
         _G.on = true
         
@@ -2215,7 +2215,7 @@ Karo:("Auto Buy Box Sanic",function(state)
             end
         end)
         
-Karo:("Auto Buy Box  House(fixed)",function(state)
+Karo:Toggle("Auto Buy Box  House(fixed)",function(state)
     if state then
         _G.on = true
         
@@ -2235,7 +2235,7 @@ Karo:("Auto Buy Box  House(fixed)",function(state)
             end
         end)
         
-Karo:("Auto Buy Box Sandman",function(state)
+Karo:Toggle("Auto Buy Box Sandman",function(state)
     if state then
         _G.on = true
         
@@ -2255,7 +2255,7 @@ Karo:("Auto Buy Box Sandman",function(state)
             end
         end)
         
-Karo:("Auto Buy Box Noob",function(state)
+Karo:Toggle("Auto Buy Box Noob",function(state)
     if state then
         _G.on = true
         
@@ -2275,7 +2275,7 @@ Karo:("Auto Buy Box Noob",function(state)
             end
         end)
         
-Karo:("Auto Buy Box Toy",function(state)
+Karo:Toggle("Auto Buy Box Toy",function(state)
     if state then
         _G.on = true
         
@@ -2295,7 +2295,7 @@ Karo:("Auto Buy Box Toy",function(state)
             end
         end)
         
-Karo:("Auto Buy Box Egg",function(state)
+Karo:Toggle("Auto Buy Box Egg",function(state)
     if state then
         _G.on = true
         
@@ -2315,7 +2315,7 @@ Karo:("Auto Buy Box Egg",function(state)
             end
         end)
         
-Karo:("Auto Buy Box Air",function(state)
+Karo:Toggle("Auto Buy Box Air",function(state)
     if state then
         _G.on = true
         
@@ -2342,7 +2342,7 @@ Caro:Line()
 Caro:Label("Label")
 
 
-Caro:("Auto Buy Dart",function(state)
+Caro:Toggle("Auto Buy Dart",function(state)
     if state then
         _G.on = true
         
@@ -2362,7 +2362,7 @@ Caro:("Auto Buy Dart",function(state)
             end
         end)
         
-Caro:("Auto Buy Demogorgan Kwii",function(state)
+Caro:Toggle("Auto Buy Demogorgan Kwii",function(state)
     if state then
         _G.on = true
         
@@ -2382,7 +2382,7 @@ Caro:("Auto Buy Demogorgan Kwii",function(state)
             end
         end)
         
-Caro:("Auto Buy Demogorgan",function(state)
+Caro:Toggle("Auto Buy Demogorgan",function(state)
     if state then
         _G.on = true
         
@@ -2402,7 +2402,7 @@ Caro:("Auto Buy Demogorgan",function(state)
             end
         end)
         
-Caro:("Auto Buy Retro Bike",function(state)
+Caro:Toggle("Auto Buy Retro Bike",function(state)
     if state then
         _G.on = true
         
@@ -2422,7 +2422,7 @@ Caro:("Auto Buy Retro Bike",function(state)
             end
         end)
         
-Caro:("Auto Buy Walky Talky",function(state)
+Caro:Toggle("Auto Buy Walky Talky",function(state)
     if state then
         _G.on = true
         
@@ -2442,7 +2442,7 @@ Caro:("Auto Buy Walky Talky",function(state)
             end
         end)
         
-Caro:("Auto Buy Green Ooze",function(state)
+Caro:Toggle("Auto Buy Green Ooze",function(state)
     if state then
         _G.on = true
         
