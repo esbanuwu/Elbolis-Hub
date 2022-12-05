@@ -2464,7 +2464,8 @@ Caro:Toggle("Auto Buy Green Ooze",function(state)
             end
         end)
 
---function code--
+-- function Code --
+
 Code:Line()
 
 Code:Label("Label")
@@ -2549,7 +2550,7 @@ Code:Toggle("Auto Buy Tweet" function(state)
             end
         end)
 
-Code:Toggle("Auto Buy magnifying Glass" function(state)
+Code:Toggle("Auto Buy Silver" function(state)
     if state then
         _G.on = true
         
