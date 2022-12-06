@@ -2803,7 +2803,7 @@ end)
 Misc:Button("rejoin server",function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
-Misc:Button("safe place", "safe", function()
+Misc:Button("safe place",function()
 Instance.new('Part',workspace)
 Local = game:GetService('Players').LocalPlayer
 Char  = Local.Character
