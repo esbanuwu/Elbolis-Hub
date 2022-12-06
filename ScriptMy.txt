@@ -1857,6 +1857,7 @@ local Karo = Win:Tab("• Auto box toy", img)
 local Caro = Win:Tab("• auto Stranger", img)
 local Code = Win:Tab("• auto Code Items", img)
 local Drop = Win:Tab("• auto Drop Items", img)
+local Drop = Win:Tab("• Misc", img)
 
 
 -- function Main --
@@ -2776,4 +2777,57 @@ end
     else
         _G.on = false
     end
+end)
+
+-- function Misc --
+
+Musc:Line()
+
+Misc:Label("Label")
+
+Misc:Button("Infinite Yield",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+Misc:Button("Trade Value",function()
+    game.Players.localPlayer.XRay.Value = true
+end)
+Misc:Button("Anti-afk",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Btt5A3CC"))()
+end)
+Misc:Button("Fly v2",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/h5QDPy6s"))()
+end)
+Misc:Button("fake drop gui",function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/domdaobfuscater/09214a11b8a30bab47ceff281116195f/raw/40356a0ff4542a51283ab5de0a642233a6ceb6f9/gistfile1.txt"))()
+end)
+Misc:Button("rejoin server",function()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
+Misc:Button("safe place", "safe", function()
+Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(180,1,180)
+box.Position = Vector3.new(198273,916455,133113)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(198273,916470,133113)
 end)
