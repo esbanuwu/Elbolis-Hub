@@ -1857,7 +1857,7 @@ local Karo = Win:Tab("• Auto box toy", img)
 local Caro = Win:Tab("• auto Stranger", img)
 local Code = Win:Tab("• auto Code Items", img)
 local Drop = Win:Tab("• auto Drop Items", img)
-local Drop = Win:Tab("• Misc", img)
+local Misc = Win:Tab("• Misc", img)
 
 
 -- function Main --
@@ -2781,7 +2781,7 @@ end)
 
 -- function Misc --
 
-Musc:Line()
+Misc:Line()
 
 Misc:Label("Label")
 
