@@ -2578,6 +2578,31 @@ Drop:Line()
 
 Drop:Label("Label")
 
+Drop:Toggle("Drop XOX Ball Rainbow", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            wait(0.5)
+            
+local args = {
+    [1] = "XOX Ball Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+
+wait(0.5)
+
+local args = {
+    [1] = "XOX Ball Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+end
+    else
+        _G.on = false
+    end
+end)
+
 Drop:Toggle("Drop F", function(state)
     if state then
         _G.on = true
