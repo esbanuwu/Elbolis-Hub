@@ -2754,14 +2754,14 @@ end
     end
 end)
 
-Drop:Toggle("Drop The Banana", function(state)
+Drop:Toggle("Drop The banana", function(state)
     if state then
         _G.on = true
         while _G.on do
             wait(0.5)
             
 local args = {
-    [1] = "The Banana"
+    [1] = "The banana"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
@@ -2769,7 +2769,7 @@ game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
 wait(0.5)
 
 local args = {
-    [1] = "The Banana"
+    [1] = "The banana"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
