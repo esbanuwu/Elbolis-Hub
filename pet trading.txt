@@ -124,7 +124,7 @@ local AutoColoredDupee = false
 
 local function AutoNormalDupe()
 	repeat task.wait(0.01)
-		if GetToolFromCharacter() and AutNormalDupee then
+		if GetToolFromCharacter() and AutoNormalDupee then
 			local Args = {
 				[1] = GetToolFromCharacter().Name,
 				[2] = 6,
