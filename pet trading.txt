@@ -2039,8 +2039,8 @@ Tabes1:Note("Auto dupe")
 Tabes1:Button("Normal Dupe",function()
 	NormalDupe()
 end)
-Tabes1:Button("Golden Dupe",function()
-	GoldenDupe()
+Tabes1:Button("Rainbow Dupe",function()
+	RainbowDupe()
 end)
 Tabes1:Button("Colored Dupe",function()
 	ColoredDupe()
@@ -2048,6 +2048,9 @@ end)
 
 Tabes1:Toggle("Auto Normal Dupe", function(State)
 	AutoNormalDupee = State
+end)
+Tabes1:Toggle("Auto Rainbow Dupe", function(State)
+	AutoRainbowDupee = State
 end)
 Tabes1:Toggle("Auto Colored Dupe",function(State)
 	AutoColoredDupee = State
