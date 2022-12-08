@@ -2086,12 +2086,6 @@ end)
 Tabes1:Toggle("Auto Normal Dupe", function(State)
 	AutoNormalDupee = State
 end)
-Tabes1:Toggle("Auto Make Golden 6", function(State)
-	AutoGoldenDupee = State
-end)
-Tabes1:Toggle("Auto Make Rainbow 6", function(State)
-	AutoRainbowDupee = State
-end)
 Tabes1:Toggle("Auto Colored Dupe",function(State)
 	AutoColoredDupee = State
 end)
