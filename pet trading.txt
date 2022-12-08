@@ -2075,7 +2075,7 @@ end)
 Tabes2:Line()
 Tabes2:Note("Auto drop")
 
-Tabes2:Slider("Delay", 0, 500, 50, function(d)
+Tabes2:Slider("Delay", 5, 0.1, function(d)
 AutoDropping_Delay = d
 end)
 
