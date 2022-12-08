@@ -2047,7 +2047,7 @@ _G.SectionTextColor = Color3.fromRGB(150, 150, 150)
 _G.SectionOn = Color3.fromRGB(0, 250, 0)
 
 -- Window --
-local Win = Blacklib:Window("Testing Gui")
+local Win = Blacklib:Window("Pet Trading Dupe")
 -- Tab --
 local Tabes = Win:Tab("• Upgrade", img)
 local Tabes1 = Win:Tab("• Dupe", img)
