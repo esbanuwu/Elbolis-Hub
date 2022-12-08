@@ -77,7 +77,7 @@ local function NormalDupe() -- Dupes A Normal Item (Atleast 6 Of Them Required)
 	end
 end
 
-local functio RainbowDupe() -- Dupes A Golden Item (Atleast 6 Of Them Required)
+local function RainbowDupe() -- Dupes A Rainbow Item (Atleast 6 Of Them Required)
 	if GetToolFromCharacter() then
 		local Args = {
 			[1] = GetToolFromCharacter().Name,
