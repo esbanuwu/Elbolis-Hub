@@ -1995,26 +1995,26 @@ _G.SectionOn = Color3.fromRGB(0, 250, 0)
 -- Window --
 local Win = Blacklib:Window("Testing Gui")
 -- Tab --
-local Tabes = Win:Tab("• Testing", img)
-local Tabes1 = Win:Tab("• Testing", img)
-local Tabes2 = Win:Tab("• Testing", img)
-local Tabes3 = Win:Tab("• Testing", img)
+local Tabes = Win:Tab("• Upgrade", img)
+local Tabes1 = Win:Tab("• Dupe", img)
+local Tabes2 = Win:Tab("• Fixing", img)
+local Tabes3 = Win:Tab("• Misc", img)
 
 
-Tabes:Label("Label")
-Tabes1:Label("Label")
-Tabes2:Label("Label")
-Tabes3:Label("Label")
+Tabes:Label("Auto Upgrade")
+Tabes1:Label("Dupe Gold no work")
+Tabes2:Label("Fixing autodrop")
+Tabes3:Label("Misc")
 
 Tabes:Line()
-Tabes:Note("Note")
+Tabes:Note("Auto Upgrade for money")
 
 Tabes:Toggle("Auto Upgrade", function(State)
 	AutoUpgrading = State
 end)
 
 Tabes1:Line()
-Tabes1:Note("Note")
+Tabes1:Note("Auto dupe")
 
 Tabes1:Button("Normal Dupe",function()
 	NormalDupe()
@@ -2034,14 +2034,14 @@ Tabes1:Toggle("Auto Colored Dupe",function(State)
 end)
 
 Tabes2:Line()
-Tabes2:Note("Note")
+Tabes2:Note("Auto drop")
 
 Tabes2:Toggle("Auto Drop", function(State)
 	AutoDropping = State
 end)
 
 Tabes3:Line()
-Tabes3:Note("Note")
+Tabes3:Note("Misc")
 
 Tabes3:Button("Rejoin",function()
 	if syn then
