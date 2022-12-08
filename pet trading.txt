@@ -122,26 +122,24 @@ local AutoGoldenDupee = false
 local AutoRainbowDupee = false
 local AutoColoredDupee = false
 
-
-
-local function AutoRainbowDupe()
+local function AutoNormalDupe()
 	repeat task.wait(0.01)
-		if GetToolFromCharacter() and AutoRainbowDupee then
+		if GetToolFromCharacter() and AutNormalDupee then
 			local Args = {
 				[1] = GetToolFromCharacter().Name,
 				[2] = 6,
-				[3] = "Rainbow"
+				[3] = "Normal"
 			}
 			task.spawn(function()
 				game:GetService("ReplicatedStorage").Functions.Upgrade.UpgradeRF:InvokeServer(unpack(Args))
 			end)
 		else
-			AutoRainbowDupe()
+			AutoNormalDupe()
 		end
 	until
 	YourDadExists == true
 end
-task.spawn(AutoRainbowDupe)
+task.spawn(AutoNormalDupe)
 
 local function AutoGoldenDupe()
 	repeat task.wait(0.01)
@@ -161,6 +159,25 @@ local function AutoGoldenDupe()
 	YourDadExists == true
 end
 task.spawn(AutoGoldenDupe)
+
+local function AutoRainbowDupe()
+	repeat task.wait(0.01)
+		if GetToolFromCharacter() and AutoRainbowDupee then
+			local Args = {
+				[1] = GetToolFromCharacter().Name,
+				[2] = 6,
+				[3] = "Rainbow"
+			}
+			task.spawn(function()
+				game:GetService("ReplicatedStorage").Functions.Upgrade.UpgradeRF:InvokeServer(unpack(Args))
+			end)
+		else
+			AutoRainbowDupe()
+		end
+	until
+	YourDadExists == true
+end
+task.spawn(AutoRainbowDupe)
 
 local function AutoColoredDupe()
 	repeat task.wait(0.01)
@@ -2055,6 +2072,9 @@ Tabes1:Note("Auto dupe")
 
 Tabes1:Button("Normal Dupe",function()
 	NormalDupe()
+end)
+Tabes1:Button("Golden Dupe",function()
+	GoldenDupe()
 end)
 Tabes1:Button("Rainbow Dupe",function()
 	RainbowDupe()
