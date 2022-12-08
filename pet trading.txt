@@ -2075,12 +2075,20 @@ end)
 Tabes2:Line()
 Tabes2:Note("Auto drop")
 
+Tabes2:Slider("Delay", 0, 500, 50, function(d)
+AutoDropping_Delay = d
+end)
+
 Tabes2:Toggle("Auto Drop", function(State)
 	AutoDropping = State
 end)
 
 Tabes3:Line()
 Tabes3:Note("Misc")
+
+Tabes3:Slider("Speed", 0, 500, 50, function(s)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
 
 Tabes3:Button("Rejoin",function()
 	if syn then
