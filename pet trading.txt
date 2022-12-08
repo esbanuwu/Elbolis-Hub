@@ -49,13 +49,13 @@ local function AutoDrop()
 			}
 
 
-game:GetService("ReplicatedStorage").Events.PickAndDrop.PickAndDropRE:FireServer("Drop")
+game:GetService("ReplicatedStorage").Events.PickAndDrop.PickAndDropRE:FireServer()
 
 			local Args_2 = {
 				[1] = CurrentAutoDropping
 			}
 
-			game:GetService("ReplicatedStorage").Events.PickAndDrop.PickAndDropRE:FireServer(unpack(args))
+			game:GetService("ReplicatedStorage").Events.PickAndDrop.PickAndDropRE:FireServer()
 			task.wait(AutoDropping_Delay)
 		else
 			AutoDrop()
