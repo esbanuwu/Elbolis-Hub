@@ -1853,11 +1853,11 @@ local Win = Blacklib:Window("Verify By Elbolis")
 local Tabes = Win:Tab("• Verify", img)
 local Tabes1 = Win:Tab("• Execute", img)
 
-Tabes:Label("Label")
-Tabes1:Label("Label")
+Tabes:Label("Generate Code")
+Tabes1:Label("Elbolis hub")
 
 Tabes:Line()
-Tabes:Note("Note")
+Tabes:Note("Send code to Discord")
 
 Tabes:Button("Get Code", function()
 print(game:GetService("RbxAnalyticsService"):GetClientId())
@@ -1868,7 +1868,7 @@ setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
 Tabes1:Line()
-Tabes1:Note("Note")
+Tabes1:Note("Hub all My script")
 
 Tabes1:Button("Pop it Trading", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
