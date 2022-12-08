@@ -1850,9 +1850,11 @@ _G.SectionOn = Color3.fromRGB(0, 250, 0)
 -- Window --
 local Win = Blacklib:Window("Verify By Elbolis")
 -- Tab --
-local Tabes = Win:Tab("• Verify And Execute", img)
+local Tabes = Win:Tab("• Verify", img)
+local Tabes1 = Win:Tab("• Execute", img)
 
 Tabes:Label("Label")
+Tabes1:Label("Label")
 
 Tabes:Line()
 Tabes:Note("Note")
@@ -1865,6 +1867,13 @@ Tabes:Button("Copy Code", function()
 setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 end)
 
-Tabes:Button("Execute", function()
+Tabes1:Line()
+Tabes1:Note("Note")
+
+Tabes1:Button("Pop it Trading", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
+end)
+
+Tabes1:Button("Pets Trading", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
 end)
