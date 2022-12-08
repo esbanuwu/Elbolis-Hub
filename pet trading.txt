@@ -55,7 +55,7 @@ game:GetService("ReplicatedStorage").Events.PickAndDrop.PickAndDropRE:FireServer
 				[1] = CurrentAutoDropping
 			}
 
-			game:GetService("ReplicatedStorage").Events.PickAndDrop.PickAndDropRE:FireServer("TakeTool")
+			game:GetService("ReplicatedStorage").Events.PickAndDrop.PickAndDropRE:FireServer(unpack(args))
 			task.wait(AutoDropping_Delay)
 		else
 			AutoDrop()
