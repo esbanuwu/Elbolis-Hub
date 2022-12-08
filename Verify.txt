@@ -1875,5 +1875,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/
 end)
 
 Tabes1:Button("Pets Trading", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Thepopitscripts"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Petverify"))() 
 end)
