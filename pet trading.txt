@@ -2161,3 +2161,7 @@ box.Position = Vector3.new(198273,916455,133113)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(198273,916470,133113)
 end)
+
+Tabes3:Button("Spawn zone",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(60,19,-267)
+end)
