@@ -2130,6 +2130,10 @@ Tabes3:Button("Infinite Yield",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
 
+Tabes3:Button("Anti-afk",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Btt5A3CC"))()
+end)
+
 Tabes3:Button("Fly Ui v2",function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/h5QDPy6s"))()
 end)
