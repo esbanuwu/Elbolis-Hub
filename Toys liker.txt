@@ -1946,6 +1946,12 @@ local A_2 = 10140
 local Event = game:GetService("ReplicatedStorage").Events.Coin.CoinMarketRE
 Event:FireServer(A_1, A_2)
 end)
+Tabes1:Button("More Orange pumking -- ???",function()
+	local A_1 = "purchase"
+local A_2 = 10246
+local Event = game:GetService("ReplicatedStorage").Events.Coin.CoinMarketRE
+Event:FireServer(A_1, A_2)
+end)
 Tabes1:Button("Red Pumking -- 2299999",function()
 	local A_1 = "purchase"
 local A_2 = 10130
@@ -1975,6 +1981,12 @@ local A_2 = 20140
 local Event = game:GetService("ReplicatedStorage").Events.Coin.CoinMarketRE
 Event:FireServer(A_1, A_2)
 end)
+Tabes1:Button("More Orange pumking -- ???",function()
+	local A_1 = "purchase"
+local A_2 = 20246
+local Event = game:GetService("ReplicatedStorage").Events.Coin.CoinMarketRE
+Event:FireServer(A_1, A_2)
+end)
 Tabes1:Button("Red Pumking -- 13799994",function()
 	local A_1 = "purchase"
 local A_2 = 20130
@@ -2001,6 +2013,12 @@ end)
 Tabes1:Button("Orange pumking -- 5400000",function()
 	local A_1 = "purchase"
 local A_2 = 30140
+local Event = game:GetService("ReplicatedStorage").Events.Coin.CoinMarketRE
+Event:FireServer(A_1, A_2)
+end)
+Tabes1:Button("More Orange pumking -- ???",function()
+	local A_1 = "purchase"
+local A_2 = 30246
 local Event = game:GetService("ReplicatedStorage").Events.Coin.CoinMarketRE
 Event:FireServer(A_1, A_2)
 end)
