@@ -1,3 +1,19 @@
+print("Checking game")
+wait(.30)
+
+--Pet Trading ✨
+
+print("Pet Trading ✨")
+
+if game.PlaceId == 7903991471 then
+	print("Opening Gui")
+	wait(0.25)
+	print("Finalizing script")
+	wait(0.15)
+	print("Checking if any anti-cheat what published")
+	wait(0.07)
+	print("Done!")
+
 local function GetToolFromCharacter()
 	for _, Tool in ipairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
 		if Tool:IsA("Tool") then
@@ -2169,3 +2185,6 @@ end)
 Tabes3:Button("Spawn zone",function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(60,19,-267)
 end)
+else
+	game.Players.LocalPlayer:Kick("Game is not supported")
+end
