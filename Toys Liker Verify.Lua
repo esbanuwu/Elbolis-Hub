@@ -14,7 +14,7 @@ if game.PlaceId == 7503115095 then
 	wait(0.07)
 	print("Done!")
 
-local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Verify"))()
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Elbolis-Hub/main/WhiteList.Lua"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
  
 for i,v in pairs(HWIDTable) do
