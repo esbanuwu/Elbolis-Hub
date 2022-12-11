@@ -1935,10 +1935,11 @@ Tabe:Toggle("Auto Upgrade",function(State)
 	AutoUpgrading = State
 end)
 
-Tabe:Slider("Extra Delay", 5, 0.1, function(d)
+Tabe:Slider("Extra Delay", 5, 0.1,function(d)
 	AutoDropping_Delay = d
 end)
-Tabe:Toggle("Auto Drop", function(State)
+
+Tabe:Toggle("Auto Drop",function(State)
 	AutoDropping = State
 end)
 
