@@ -5,7 +5,7 @@ wait(.30)
 
 print("Toys Pop It Trading ✨")
 
-if game.PlaceId == 7346416636 then
+if game.PlaceId == 7503115095 then
 	print("Opening Gui")
 	wait(0.25)
 	print("Finalizing script")
