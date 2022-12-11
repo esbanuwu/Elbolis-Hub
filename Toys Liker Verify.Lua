@@ -20,7 +20,7 @@ local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 for i,v in pairs(HWIDTable) do
     if v == HWID then
         print("Hardware ID Passed,you can load the script now...")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Yeppro/main/Toys%20likernew.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/esbanuwu/Elbolis-Hub/main/LikerPopittrading.Lua"))()
     end
 end
 else
