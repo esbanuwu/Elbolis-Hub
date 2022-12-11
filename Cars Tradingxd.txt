@@ -30,7 +30,6 @@ end
 task.spawn(AutoUpgrade)
 
 local AutoDropping = false
-local AutoDropping_Delay = 0
 local CurrentAutoDropping = nil
 
 task.spawn(function()
@@ -2108,10 +2107,6 @@ end)
 
 Tabes2:Line()
 Tabes2:Note("Auto drop")
-
-Tabes2:Slider("Delay", 0, 5, 0.1, function(d)
-AutoDropping_Delay = d
-end)
 
 Tabes2:Toggle("Auto Drop", function(State)
 	AutoDropping = State
