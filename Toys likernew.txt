@@ -1,3 +1,69 @@
+local function GetToolFromCharacter()
+	for _, Tool in ipairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+		if Tool:IsA("Tool") then
+			return Tool
+		end
+	end
+end
+
+local AutoUpgrading = false
+local YourDadExists = false
+
+local function AutoUpgrade() -- Auto Upgrades The Tool Your Holding To The Jet
+	repeat task.wait()
+		if GetToolFromCharacter() and AutoUpgrading and GetToolFromCharacter().Name ~= "10082" then
+			local Args = {
+				[1] = {
+					[GetToolFromCharacter().Name] = 1
+				}
+			}
+
+			task.spawn(function()
+				game:GetService("ReplicatedStorage").Functions.Fuse.FuseRF:InvokeServer(unpack(Args))
+			end)
+		else
+			AutoUpgrade()
+		end
+	until
+	YourDadExists == true
+end
+task.spawn(AutoUpgrade)
+
+local AutoDropping = false
+local AutoDropping_Delay = 0
+local CurrentAutoDropping = nil
+
+task.spawn(function()
+	while task.wait() do
+		if GetToolFromCharacter() then
+			CurrentAutoDropping = GetToolFromCharacter().Name
+		end
+	end
+end)
+
+local function AutoDrop()
+	repeat task.wait(0.2)
+		if CurrentAutoDropping and AutoDropping then
+			local Args_1 = {
+				[1] = game:GetService("Players").LocalPlayer
+			}
+
+			game:GetService("ReplicatedStorage").Events.PickAndDrop.DropRE:FireServer(unpack(Args_1))
+
+			local Args_2 = {
+				[1] = CurrentAutoDropping
+			}
+
+			game:GetService("ReplicatedStorage").Events.PickAndDrop.TakeToolRE:FireServer(unpack(Args_2))
+			task.wait(AutoDropping_Delay)
+		else
+			AutoDrop()
+		end
+	until
+	YourDadExists == true
+end
+task.spawn(AutoDrop)
+
 -- BLACKTRAP V1.0 FIXED_BUILD --
 -- REALEASE DATE ON 17/02/2022 --
 -- MADE By WANZ --
@@ -1850,15 +1916,22 @@ _G.SectionOn = Color3.fromRGB(0, 250, 0)
 -- Window --
 local Win = Blacklib:Window("Liker Pop It Trading")
 -- Tab --
+local Tabe = Win:Tab("• Auto-Drop", img)
 local Tabes = Win:Tab("• Christmas", img)
 local Tabes1 = Win:Tab("• Hallowen", img)
 local Tabes2 = Win:Tab("• Easter", img)
 local Tabes3 = Win:Tab("• Misc", img)
 
+Tabe:Label("Drop")
 Tabes:Label("Christmas")
 Tabes1:Label("Hallowe")
 Tabes2:Label("Easter")
 Tabes3:Label("Misc")
+
+Tabe:Line()
+Tabe:Note("Note")
+
+
 
 Tabes:Line()
 Tabes:Note("Note")
